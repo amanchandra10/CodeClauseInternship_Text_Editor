@@ -9,7 +9,6 @@ let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 let scriptButtons = document.querySelectorAll(".script");
 
-//List of fontlist
 let fontList = [
   "Arial",
   "Verdana",
@@ -20,7 +19,7 @@ let fontList = [
   "cursive",
 ];
 
-//Initial Settings
+
 const initializer = () => {
   //function calls for highlighting buttons
   //No highlights for link, unlink,lists, undo,redo since they are one time operations
@@ -124,7 +123,7 @@ const highlighterRemover = (className) => {
 // for save
 
 function saveText() {
-    // alert("ggy")
+    // alert("hi")
     var text = document.getElementById('text-input').innerHTML;
     localStorage.setItem('text', text);
 }
